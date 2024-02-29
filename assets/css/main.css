@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "DrukCyr";
+  src: url("/fonts/DrukCyr-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DrukWide";
+  src: url("/fonts/drukwidecyr-medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.container {
+  max-width: 1216px;
+  padding: 0 5px;
+}
+.fact span {
+  font-family: "DrukCyr", sans-serif;
+  font-size: 54px;
+  font-weight: 500;
+  line-height: 48px;
+  content: "\A";
+}
+.fact span:after {
+  content: "\A";
+  white-space: pre;
+}
